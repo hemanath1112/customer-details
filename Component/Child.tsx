@@ -7,84 +7,57 @@ import {
     View,
     FlatList,
     ScrollView,
+    Image,
   } from 'react-native';
 
 const Child = ({item}) => {
 
   return(
-    <View style={styles.Contacts}> 
-    <Text><Text style={styles.PostId}>Post ID:</Text> {item.id}</Text>
-      <Text><Text style={styles.UserEmail}>User Email Id: </Text>{item.email}</Text>
-      <Text style={styles.PostTitle}>Post Title</Text>
-      <Text style={styles.Name}>{item.name}</Text>
-      <Text style={styles.PostDetails}>Post Detailes</Text>
-      <Text style={styles.Postbody}>{item.body}</Text>
+    <View style={styles.Contacts}>
+      <View>
+      <Image source={{uri: 'https://i.pinimg.com/564x/e6/3a/12/e63a1274d16ece550d0886e481cad659.jpg'}}
+       style={styles.Image} />
+      </View>
+      <View>
+        <Text style={styles.Name}>{item.name}</Text>
+        <Text style={styles.Number}>{item.number}</Text>
+      </View>
     </View>
   )
   }
 export default Child
 
 const styles = StyleSheet.create({
-  Title:{
-    fontSize: 20,
-    marginTop:20,
-    marginBottom:20,
-    textAlign:'center',
-    fontWeight:'bold',
-  },
   Contacts:{
-    marginBottom:20,
-    paddingVertical:10,
-    paddingHorizontal:20,
-    marginHorizontal:20,
-    backgroundColor:'#bdc3c7',
-    borderRadius:20,
+    marginLeft:12,
+    marginRight:50,
+    borderBottomColor:'#dfe6e9',
+    borderBottomWidth:1,
+    flexDirection:'row',
+    alignItems:'center',
+    paddingBottom:20,
+    paddingTop:20,
+    
   },
-  PostId:{
-    fontSize:14,
-    fontWeight:'bold'
-  },
-  PostTitle:{
-    textDecorationLine:'underline',
-    textAlign:'center',
-    marginTop:10,
-    fontSize:18,
-    fontWeight:'bold'
-  },
-  UserEmail:{
-    fontWeight:'bold',
-    fontSize:14
-  },
-  PostDetails:{
-    textAlign:'center',
-    marginTop:5,
-    fontWeight:'bold',
-    fontSize:16,
-    marginBottom:5,
-    textDecorationLine:'underline'
+  Image:{
+    width:70,
+    height:70,
+    borderRadius:50,
+    objectFit:'cover',
+    marginRight:20,
+    marginLeft:8,
   },
   Name:{
-    fontSize:16,
+    fontSize:20,
+    marginBottom:5,
     fontWeight:'bold',
-    textAlign:'center',
-    textTransform:'uppercase',
-    marginTop:5
+    marginTop:5,
+    color:'black',
+    fontFamily:'Roboto-italic'
   },
   Number:{
     fontSize:12,
     fontWeight:'bold',
+    color:'black'
   },
-  contactList:{
-    paddingBottom:150
-  },
-  Box:{
-    width:50,
-    height:50,
-    backgroundColor:'green',
-    borderRadius:50,
-    marginRight:20
-  },
-  Postbody:{
-    textAlign:'center'
-  }
 });
