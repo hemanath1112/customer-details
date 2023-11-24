@@ -78,6 +78,59 @@
                     }
                 },
                 {
+                    "source": "/home/dell/React Native/customer-details/android/app/build/generated/res/resValues/debug/values/gradleResValues.xml",
+                    "from": {
+                        "startLines": "6,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "154,258",
+                        "endColumns": "63,68",
+                        "endOffsets": "213,322"
+                    },
+                    "to": {
+                        "startLines": "286,287",
+                        "startColumns": "4,4",
+                        "startOffsets": "18286,18350",
+                        "endColumns": "63,68",
+                        "endOffsets": "18345,18414"
+                    }
+                },
+                {
+                    "source": "/home/dell/React Native/customer-details/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "54",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "267"
+                    },
+                    "to": {
+                        "startLines": "388",
+                        "startColumns": "4",
+                        "startOffsets": "27022",
+                        "endLines": "391",
+                        "endColumns": "12",
+                        "endOffsets": "27200"
+                    }
+                },
+                {
+                    "source": "/home/dell/React Native/customer-details/android/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "51",
+                        "endOffsets": "63"
+                    },
+                    "to": {
+                        "startLines": "318",
+                        "startColumns": "4",
+                        "startOffsets": "20511",
+                        "endColumns": "51",
+                        "endOffsets": "20558"
+                    }
+                },
+                {
                     "source": "/home/dell/.gradle/caches/transforms-3/98e95a351ab9bde9d0757d3ba2da6dd9/transformed/jetified-savedstate-1.1.0/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -150,23 +203,6 @@
                     }
                 },
                 {
-                    "source": "/home/dell/AwesomeProject/android/app/build/generated/res/resValues/debug/values/gradleResValues.xml",
-                    "from": {
-                        "startLines": "6,8",
-                        "startColumns": "4,4",
-                        "startOffsets": "154,258",
-                        "endColumns": "63,68",
-                        "endOffsets": "213,322"
-                    },
-                    "to": {
-                        "startLines": "286,287",
-                        "startColumns": "4,4",
-                        "startOffsets": "18286,18350",
-                        "endColumns": "63,68",
-                        "endOffsets": "18345,18414"
-                    }
-                },
-                {
                     "source": "/home/dell/.gradle/caches/transforms-3/e13f88164840fe641a466d05cd8edac7/transformed/jetified-flipper-0.182.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,3",
@@ -217,42 +253,6 @@
                         "startOffsets": "17929",
                         "endColumns": "49",
                         "endOffsets": "17974"
-                    }
-                },
-                {
-                    "source": "/home/dell/AwesomeProject/android/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "51",
-                        "endOffsets": "63"
-                    },
-                    "to": {
-                        "startLines": "318",
-                        "startColumns": "4",
-                        "startOffsets": "20511",
-                        "endColumns": "51",
-                        "endOffsets": "20558"
-                    }
-                },
-                {
-                    "source": "/home/dell/AwesomeProject/android/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "54",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "267"
-                    },
-                    "to": {
-                        "startLines": "388",
-                        "startColumns": "4",
-                        "startOffsets": "27022",
-                        "endLines": "391",
-                        "endColumns": "12",
-                        "endOffsets": "27200"
                     }
                 },
                 {

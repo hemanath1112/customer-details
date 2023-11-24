@@ -17,11 +17,11 @@ com.awesomeproject.app-sqlite-2.2.0-15 /home/dell/.gradle/caches/transforms-3/dc
 com.awesomeproject.app-jetified-flipper-0.182.0-16 /home/dell/.gradle/caches/transforms-3/e13f88164840fe641a466d05cd8edac7/transformed/jetified-flipper-0.182.0/res
 com.awesomeproject.app-jetified-annotation-experimental-1.1.0-17 /home/dell/.gradle/caches/transforms-3/ea88610a3c8be13450373fa73372379b/transformed/jetified-annotation-experimental-1.1.0/res
 com.awesomeproject.app-jetified-react-android-0.72.7-debug-18 /home/dell/.gradle/caches/transforms-3/f5b6369cea5fc99dae80dd8391bca788/transformed/jetified-react-android-0.72.7-debug/res
-com.awesomeproject.app-pngs-19 /home/dell/AwesomeProject/android/app/build/generated/res/pngs/debug
-com.awesomeproject.app-resValues-20 /home/dell/AwesomeProject/android/app/build/generated/res/resValues/debug
-com.awesomeproject.app-rs-21 /home/dell/AwesomeProject/android/app/build/generated/res/rs/debug
-com.awesomeproject.app-mergeDebugResources-22 /home/dell/AwesomeProject/android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
-com.awesomeproject.app-mergeDebugResources-23 /home/dell/AwesomeProject/android/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
-com.awesomeproject.app-merged_res-24 /home/dell/AwesomeProject/android/app/build/intermediates/merged_res/debug
-com.awesomeproject.app-debug-25 /home/dell/AwesomeProject/android/app/src/debug/res
-com.awesomeproject.app-main-26 /home/dell/AwesomeProject/android/app/src/main/res
+com.awesomeproject.app-pngs-19 /home/dell/React Native/customer-details/android/app/build/generated/res/pngs/debug
+com.awesomeproject.app-resValues-20 /home/dell/React Native/customer-details/android/app/build/generated/res/resValues/debug
+com.awesomeproject.app-rs-21 /home/dell/React Native/customer-details/android/app/build/generated/res/rs/debug
+com.awesomeproject.app-mergeDebugResources-22 /home/dell/React Native/customer-details/android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
+com.awesomeproject.app-mergeDebugResources-23 /home/dell/React Native/customer-details/android/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.awesomeproject.app-merged_res-24 /home/dell/React Native/customer-details/android/app/build/intermediates/merged_res/debug
+com.awesomeproject.app-debug-25 /home/dell/React Native/customer-details/android/app/src/debug/res
+com.awesomeproject.app-main-26 /home/dell/React Native/customer-details/android/app/src/main/res
