@@ -36,7 +36,6 @@ const styles = StyleSheet.create({
     flexDirection:'row',
     paddingBottom:20,
     paddingTop:20,
-    
   },
   Image:{
     width:70,
@@ -52,7 +51,7 @@ const styles = StyleSheet.create({
     fontWeight:'bold',
     marginTop:5,
     color:'black',
-    fontFamily:'Roboto-italic'
+    fontFamily:'Roboto-Black'
   },
   Number:{
     fontSize:12,

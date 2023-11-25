@@ -22,13 +22,14 @@ function App(): JSX.Element {
     .catch((err)=>console.log(err))
   },[])
 
-  const renderItem =(({item})=>{
+  const renderItem =(({item}:{item:ItemProps})=>{
     return (<Child item={item}/>)
   })
 
  type ItemProps ={
   name:string;
   number:number;
+  id:number;
  };
 
   return (
@@ -37,7 +38,7 @@ function App(): JSX.Element {
       <View>
         <Text style={styles.Title}>Contact List</Text>
       </View>
-      <View style={styles.contactList}>
+      <View>
           <FlatList
             data={data}
             renderItem={renderItem}
