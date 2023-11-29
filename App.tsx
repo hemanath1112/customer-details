@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import {
   SafeAreaView,
@@ -7,79 +7,148 @@ import {
   Text,
   View,
   FlatList,
-  ScrollView,
+  RefreshControl,
+  ActivityIndicator,
 } from 'react-native';
+
 import Child from './Component/Child';
 import api from './Api/api';
 
-
 function App(): JSX.Element {
-  const [data,setData]=useState([]);
+  const [data, setData] = useState([]);
+  const [refreshing, setRefreshing] = useState(false);
+  const [curentPage, setCurentPage] = useState(0);
 
+  useEffect(() => {
+    fetchData();
+  }, [curentPage]);
 
-  useEffect(()=>{
-    axios.get("https://randomuser.me/api/?page=3&results=20")
-    .then((Response)=>setData(Response.data))
-    .catch((err)=>console.log(err))
-  },[])
+  const fetchData = () => {
+    axios
+      .get(`https://randomuser.me/api/?page=${curentPage}&results=20`)
+      .then(response => {
+        setTimeout(() => {
+          setData([...data, ...response.data.results]);
+          setRefreshing(false);
+        }, 3000);
+      })
 
-  // useEffect(()=>{
-  //   const userData = async ()=>{
-  //     try{
-  //       const Response = await api.get('/users')
-  //       setData(Response.data);
-  //     }
-  //     catch(err){
-  //       console.log(err)
-  //     }
-  //   }
-  //   userData()
-  // }, [])
+      .catch(err => console.log(err))
+      .finally(() => {
+        setRefreshing(false);
+      });
+  };
 
+  const handleRefresh = () => {
+    setRefreshing(true);
+    setCurentPage(0);
+    setData([]);
+    fetchData();
+  };
 
-  
+  const emptyRefresh = () => {
+    return <Text style={styles.NoDatas}>No Userdatas</Text>;
+  };
 
-  const renderItem =(({item}:{item:ItemProps})=>{
-    return (<Child item={item}/>)
-  })
+  const renderItem = ({item}: {item: ItemProps}) => {
+    return <Child item={item} />;
+  };
 
- type ItemProps ={
-  name:string;
-  number:number;
-  id:number;
- };
+  const Loader = () => {
+    return (
+      <View style={styles.Loader}>
+        <Text>Loading..</Text>
+        <ActivityIndicator size="large" color="red" />
+      </View>
+    );
+  };
+  const EndPage = () => {
+    return (
+      <View>
+        <Text style={styles.endofPage}>End of the Page</Text>
+      </View>
+    );
+  };
+  const LoadMoreItem = () => {
+    if (curentPage < 10) {
+      setCurentPage(curentPage + 1);
+    }
+  };
+
+  type ItemProps = {
+    name: string;
+    number: number;
+    id: number;
+    email: string;
+  };
 
   return (
     <SafeAreaView>
       <StatusBar />
-      <View>
+      <View style={styles.HeaderContent}>
         <Text style={styles.Title}>Contact List</Text>
+        <Text style={styles.Title}>CurentPage: {curentPage}</Text>
       </View>
-      <View>
+      <View style={styles.contactList}>
+        {refreshing ? (
+          <View style={styles.Loader}>
+            <Text>Loading..</Text>
+            <ActivityIndicator size="large" color="red" />
+          </View>
+        ) : (
           <FlatList
             data={data}
             renderItem={renderItem}
-            keyExtractor={(item)=>item.id.toString()}
-            />
-        </View>
+            keyExtractor={item => item.email}
+            refreshControl={
+              <RefreshControl
+                refreshing={refreshing}
+                onRefresh={handleRefresh}
+              />
+            }
+            ListFooterComponent={curentPage == 10 ? EndPage : Loader}
+            onEndReached={LoadMoreItem}
+            onEndReachedThreshold={0}
+          />
+        )}
+      </View>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  Title:{
+  Title: {
     fontSize: 20,
-    marginTop:20,
-    marginBottom:10,
-    textAlign:'center',
-    fontWeight:'bold',
-    color:'black'
+    marginTop: 20,
+    marginBottom: 10,
+    textAlign: 'center',
+    fontWeight: 'bold',
+    color: 'black',
   },
-  Contacts:{
-    marginBottom:10,
-    paddingVertical:5,
-    paddingHorizontal:20,
-  }
+  endofPage: {
+    marginTop: 10,
+    alignItems: 'center',
+    fontSize: 20,
+    textAlign: 'center',
+  },
+  NoDatas: {
+    textAlign: 'center',
+    marginTop: 400,
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  contactList: {
+    paddingBottom: 150,
+  },
+  Loader: {
+    marginVertical: 16,
+    alignItems: 'center',
+  },
+  HeaderContent: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingHorizontal: 20,
+  },
 });
 
 export default App;
