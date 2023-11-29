@@ -30,13 +30,13 @@ com.training.app-jetified-emoji2-views-helper-1.2.0-28 /home/dell/.gradle/caches
 com.training.app-jetified-annotation-experimental-1.1.0-29 /home/dell/.gradle/caches/transforms-3/ea88610a3c8be13450373fa73372379b/transformed/jetified-annotation-experimental-1.1.0/res
 com.training.app-jetified-react-android-0.72.7-debug-30 /home/dell/.gradle/caches/transforms-3/f5b6369cea5fc99dae80dd8391bca788/transformed/jetified-react-android-0.72.7-debug/res
 com.training.app-drawerlayout-1.1.1-31 /home/dell/.gradle/caches/transforms-3/f7136e33895596704e2928c39d7df1cb/transformed/drawerlayout-1.1.1/res
-com.training.app-pngs-32 /home/dell/React Native/Training/android/app/build/generated/res/pngs/debug
-com.training.app-resValues-33 /home/dell/React Native/Training/android/app/build/generated/res/resValues/debug
-com.training.app-rs-34 /home/dell/React Native/Training/android/app/build/generated/res/rs/debug
-com.training.app-mergeDebugResources-35 /home/dell/React Native/Training/android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
-com.training.app-mergeDebugResources-36 /home/dell/React Native/Training/android/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
-com.training.app-merged_res-37 /home/dell/React Native/Training/android/app/build/intermediates/merged_res/debug
-com.training.app-debug-38 /home/dell/React Native/Training/android/app/src/debug/res
-com.training.app-main-39 /home/dell/React Native/Training/android/app/src/main/res
-com.training.app-packaged_res-40 /home/dell/React Native/Training/node_modules/react-native-safe-area-context/android/build/intermediates/packaged_res/debug
-com.training.app-packaged_res-41 /home/dell/React Native/Training/node_modules/react-native-screens/android/build/intermediates/packaged_res/debug
+com.training.app-pngs-32 /home/dell/React Native/customer-details/android/app/build/generated/res/pngs/debug
+com.training.app-resValues-33 /home/dell/React Native/customer-details/android/app/build/generated/res/resValues/debug
+com.training.app-rs-34 /home/dell/React Native/customer-details/android/app/build/generated/res/rs/debug
+com.training.app-mergeDebugResources-35 /home/dell/React Native/customer-details/android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
+com.training.app-mergeDebugResources-36 /home/dell/React Native/customer-details/android/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.training.app-merged_res-37 /home/dell/React Native/customer-details/android/app/build/intermediates/merged_res/debug
+com.training.app-debug-38 /home/dell/React Native/customer-details/android/app/src/debug/res
+com.training.app-main-39 /home/dell/React Native/customer-details/android/app/src/main/res
+com.training.app-packaged_res-40 /home/dell/React Native/customer-details/node_modules/react-native-safe-area-context/android/build/intermediates/packaged_res/debug
+com.training.app-packaged_res-41 /home/dell/React Native/customer-details/node_modules/react-native-screens/android/build/intermediates/packaged_res/debug
