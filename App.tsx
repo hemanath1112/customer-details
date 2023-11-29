@@ -10,6 +10,7 @@ import {
   ScrollView,
 } from 'react-native';
 import Child from './Component/Child';
+import api from './Api/api';
 
 
 function App(): JSX.Element {
@@ -17,10 +18,26 @@ function App(): JSX.Element {
 
 
   useEffect(()=>{
-    axios.get("https://mocki.io/v1/90c2f51b-6c45-497a-84a0-33c198ff6910")
+    axios.get("https://randomuser.me/api/?page=3&results=20")
     .then((Response)=>setData(Response.data))
     .catch((err)=>console.log(err))
   },[])
+
+  // useEffect(()=>{
+  //   const userData = async ()=>{
+  //     try{
+  //       const Response = await api.get('/users')
+  //       setData(Response.data);
+  //     }
+  //     catch(err){
+  //       console.log(err)
+  //     }
+  //   }
+  //   userData()
+  // }, [])
+
+
+  
 
   const renderItem =(({item}:{item:ItemProps})=>{
     return (<Child item={item}/>)

@@ -1,30 +1,27 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import {
-    SafeAreaView,
-    StatusBar,
     StyleSheet,
     Text,
     View,
-    FlatList,
-    ScrollView,
     Image,
-  } from 'react-native';
+} from 'react-native';
+
 
 const Child = ({item}) => {
 
   return(
     <View style={styles.Contacts}>
       <View>
-      <Image source={{uri: 'https://i.pinimg.com/564x/e6/3a/12/e63a1274d16ece550d0886e481cad659.jpg'}}
-       style={styles.Image} />
+        <Image source={{uri: item.image}}
+        style={styles.Image} />
       </View>
       <View>
-        <Text style={styles.Name}>{item.name}</Text>
-        <Text style={styles.Number}>{item.number}</Text>
+        <Text style={styles.Name}>{item.firstName} {item.lastName}</Text>
+        <Text style={styles.Number}>{item.phone}</Text>
       </View>
     </View>
   )
-  }
+}
 export default Child
 
 const styles = StyleSheet.create({
@@ -34,6 +31,7 @@ const styles = StyleSheet.create({
     borderBottomColor:'#dfe6e9',
     borderBottomWidth:1,
     flexDirection:'row',
+    alignItems:'center',
     paddingBottom:20,
     paddingTop:20,
   },
@@ -42,11 +40,11 @@ const styles = StyleSheet.create({
     height:70,
     borderRadius:50,
     objectFit:'cover',
-    marginRight:20,
+    marginRight:10,
     marginLeft:8,
   },
   Name:{
-    fontSize:20,
+    fontSize:18,
     marginBottom:5,
     fontWeight:'bold',
     marginTop:5,
@@ -57,5 +55,5 @@ const styles = StyleSheet.create({
     fontSize:12,
     fontWeight:'bold',
     color:'black'
-  },
+  }
 });
