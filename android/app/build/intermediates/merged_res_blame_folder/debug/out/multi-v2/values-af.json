@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.newproject.app-mergeDebugResources-38:/values-af/values-af.xml",
+            "outputFile": "com.newproject.app-mergeDebugResources-41:/values-af/values-af.xml",
             "map": [
                 {
                     "source": "/home/dell/.gradle/caches/transforms-3/dd33cdba76574cd6269c5bd29e434651/transformed/material-1.9.0/res/values-af/values-af.xml",

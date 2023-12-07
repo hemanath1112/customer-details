@@ -13,10 +13,14 @@ import java.util.ArrayList;
 
 // @react-native-camera-roll/camera-roll
 import com.reactnativecommunity.cameraroll.CameraRollPackage;
+// @react-native-community/geolocation
+import com.reactnativecommunity.geolocation.GeolocationPackage;
 // react-native-camera
 import org.reactnative.camera.RNCameraPackage;
 // react-native-fs
 import com.rnfs.RNFSPackage;
+// react-native-maps
+import com.rnmaps.maps.MapsPackage;
 // react-native-permissions
 import com.zoontek.rnpermissions.RNPermissionsPackage;
 // react-native-safe-area-context
@@ -71,8 +75,10 @@ public class PackageList {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
       new CameraRollPackage(),
+      new GeolocationPackage(),
       new RNCameraPackage(),
       new RNFSPackage(),
+      new MapsPackage(),
       new RNPermissionsPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage(),

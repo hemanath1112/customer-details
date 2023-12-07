@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.newproject.app-mergeDebugResources-38:/values-th/values-th.xml",
+            "outputFile": "com.newproject.app-mergeDebugResources-41:/values-th/values-th.xml",
             "map": [
                 {
                     "source": "/home/dell/.gradle/caches/transforms-3/7bc2107a0f24dde54b783ba4b64ec0fd/transformed/jetified-play-services-base-18.1.0/res/values-th/values.xml",

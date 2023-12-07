@@ -11,6 +11,9 @@ const Home = () => {
   const GoCamera = () => {
     navigation.navigate('camera');
   };
+  const GoToLocationPage = ()=>{
+    navigation.navigate('Location')
+  }
 
   return (
     <View style={styles.Home}>
@@ -21,6 +24,7 @@ const Home = () => {
         <Text style={styles.CameraItem} onPress={GoCamera}>
           Camera
         </Text>
+        <Text style={styles.ListItems} onPress={GoToLocationPage}>Location</Text>
       </View>
     </View>
   );
