@@ -6497,7 +6497,7 @@
                     }
                 },
                 {
-                    "source": "/home/dell/React Native/NewProject/android/app/build/generated/res/resValues/debug/values/gradleResValues.xml",
+                    "source": "/home/dell/React Native/customer-details/android/app/build/generated/res/resValues/debug/values/gradleResValues.xml",
                     "from": {
                         "startLines": "6,8",
                         "startColumns": "4,4",
@@ -6528,6 +6528,25 @@
                         "startOffsets": "119455",
                         "endColumns": "42",
                         "endOffsets": "119493"
+                    }
+                },
+                {
+                    "source": "/home/dell/React Native/customer-details/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "54",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "267"
+                    },
+                    "to": {
+                        "startLines": "2137",
+                        "startColumns": "4",
+                        "startOffsets": "156282",
+                        "endLines": "2140",
+                        "endColumns": "12",
+                        "endOffsets": "156460"
                     }
                 },
                 {
@@ -6566,25 +6585,6 @@
                         "endLines": "26,566,567,568,569,968,969,970,2168,5488,5491,5494,10232",
                         "endColumns": "51,60,61,61,63,58,56,53,12,12,12,12,24",
                         "endOffsets": "1301,29704,29766,29828,29892,59034,59091,59145,158325,389618,389744,389872,675741"
-                    }
-                },
-                {
-                    "source": "/home/dell/React Native/NewProject/android/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "54",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "267"
-                    },
-                    "to": {
-                        "startLines": "2137",
-                        "startColumns": "4",
-                        "startOffsets": "156282",
-                        "endLines": "2140",
-                        "endColumns": "12",
-                        "endOffsets": "156460"
                     }
                 },
                 {
@@ -6681,7 +6681,7 @@
                     }
                 },
                 {
-                    "source": "/home/dell/React Native/NewProject/node_modules/react-native-camera/android/build/intermediates/packaged_res/generalDebug/values/values.xml",
+                    "source": "/home/dell/React Native/customer-details/node_modules/react-native-camera/android/build/intermediates/packaged_res/generalDebug/values/values.xml",
                     "from": {
                         "startLines": "2,9",
                         "startColumns": "4,4",
@@ -6752,6 +6752,23 @@
                         "endLines": "417,552,553,862,863,972,973,974,975,976,977,978,1638,1639,1640,1641,1642,1643,1644,1645,1646,1647,1648,1649,1650,1651,1652,1667,1668,1669,1673,1674,1675,1676,1677,1678,1679,1680,1681,1682,1683,1684,1685,1686,1687,1688,1689,1690,1691,1692,1693,1694,1695,1696,1697,1698,1699,1700,1701,1702,1703,1704,1724,1725,1755,1756,1757,1758,1759,1760,1761,1762,1763,1764,1765,1766,1767,1768,1769,1777,1861,2103,6017,6021,6023,6029,6031,7235,7236,10204,10554,10815,10836,11018,11024",
                         "endColumns": "59,71,87,68,62,69,67,71,69,60,73,72,60,60,61,63,61,60,67,99,59,65,72,68,56,51,61,71,75,64,58,58,59,59,59,59,59,59,59,59,59,59,58,59,59,59,59,59,59,59,59,59,59,58,59,59,58,58,58,58,58,58,34,34,54,62,54,57,57,60,62,56,50,49,60,56,65,33,34,34,69,70,116,12,109,12,128,71,66,24,24,24,24,24,24",
                         "endOffsets": "21620,28595,28683,51835,51898,59270,59338,59410,59480,59541,59615,59688,111085,111146,111208,111272,111334,111395,111463,111563,111623,111689,111762,111831,111888,111940,112002,113016,113092,113157,113380,113439,113499,113559,113619,113679,113739,113799,113859,113919,113979,114039,114098,114158,114218,114278,114338,114398,114458,114518,114578,114638,114698,114757,114817,114877,114936,114995,115054,115113,115172,115231,116232,116267,117851,117914,117969,118027,118085,118146,118209,118266,118317,118367,118428,118485,118551,118585,118620,119002,124385,153933,426961,427162,427338,427722,427917,513164,513231,674817,686535,710200,710881,715958,716125"
+                    }
+                },
+                {
+                    "source": "/home/dell/React Native/customer-details/android/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "47",
+                        "endOffsets": "59"
+                    },
+                    "to": {
+                        "startLines": "1895",
+                        "startColumns": "4",
+                        "startOffsets": "126732",
+                        "endColumns": "47",
+                        "endOffsets": "126775"
                     }
                 },
                 {
@@ -6915,23 +6932,6 @@
                         "startOffsets": "115974,116014,117187,117456,117511,119007,119061,119113,119162,119223",
                         "endColumns": "39,46,42,54,46,53,51,48,60,49",
                         "endOffsets": "116009,116056,117225,117506,117553,119056,119108,119157,119218,119268"
-                    }
-                },
-                {
-                    "source": "/home/dell/React Native/NewProject/android/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "47",
-                        "endOffsets": "59"
-                    },
-                    "to": {
-                        "startLines": "1895",
-                        "startColumns": "4",
-                        "startOffsets": "126732",
-                        "endColumns": "47",
-                        "endOffsets": "126775"
                     }
                 }
             ]

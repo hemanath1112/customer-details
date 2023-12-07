@@ -9,92 +9,92 @@
 9        android:targetSdkVersion="33" />
 10
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-11-->/home/dell/React Native/NewProject/android/app/src/debug/AndroidManifest.xml:5:5-77
-11-->/home/dell/React Native/NewProject/android/app/src/debug/AndroidManifest.xml:5:22-75
+11-->/home/dell/React Native/customer-details/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/home/dell/React Native/customer-details/android/app/src/debug/AndroidManifest.xml:5:22-75
 12    <uses-permission android:name="android.permission.INTERNET" /> <!-- Required -->
-12-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:3:5-67
-12-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:3:22-64
+12-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:3:5-67
+12-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:3:22-64
 13    <uses-permission android:name="android.permission.CAMERA" /> <!-- Include this only if you are planning to use the camera roll -->
-13-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:5:5-65
-13-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:5:22-62
+13-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:5:5-65
+13-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:5:22-62
 14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-14-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:8:5-80
-14-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:8:22-77
+14-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:8:5-80
+14-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:8:22-77
 15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Include this only if you are planning to use the microphone for video recording -->
-15-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:9:5-81
-15-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:9:22-78
+15-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:9:5-81
+15-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:9:22-78
 16    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-16-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:12:5-70
-16-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:12:22-68
+16-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:12:5-70
+16-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:12:22-68
 17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 17-->[com.facebook.flipper:flipper:0.182.0] /home/dell/.gradle/caches/transforms-3/e13f88164840fe641a466d05cd8edac7/transformed/jetified-flipper-0.182.0/AndroidManifest.xml:16:5-76
 17-->[com.facebook.flipper:flipper:0.182.0] /home/dell/.gradle/caches/transforms-3/e13f88164840fe641a466d05cd8edac7/transformed/jetified-flipper-0.182.0/AndroidManifest.xml:16:22-73
 18
 19    <uses-feature
-19-->[:react-native-camera] /home/dell/React Native/NewProject/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:9:5-11:36
+19-->[:react-native-camera] /home/dell/React Native/customer-details/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:9:5-11:36
 20        android:name="android.hardware.camera"
-20-->[:react-native-camera] /home/dell/React Native/NewProject/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:10:9-47
+20-->[:react-native-camera] /home/dell/React Native/customer-details/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:10:9-47
 21        android:required="false" />
-21-->[:react-native-camera] /home/dell/React Native/NewProject/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:11:9-33
+21-->[:react-native-camera] /home/dell/React Native/customer-details/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:11:9-33
 22    <uses-feature
-22-->[:react-native-camera] /home/dell/React Native/NewProject/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:12:5-14:36
+22-->[:react-native-camera] /home/dell/React Native/customer-details/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:12:5-14:36
 23        android:name="android.hardware.camera.autofocus"
-23-->[:react-native-camera] /home/dell/React Native/NewProject/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:13:9-57
+23-->[:react-native-camera] /home/dell/React Native/customer-details/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:13:9-57
 24        android:required="false" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-24-->[:react-native-camera] /home/dell/React Native/NewProject/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:14:9-33
+24-->[:react-native-camera] /home/dell/React Native/customer-details/node_modules/react-native-camera/android/build/intermediates/merged_manifest/generalDebug/AndroidManifest.xml:14:9-33
 25    <!-- <uses-sdk android:minSdkVersion="14"/> -->
 26    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 26-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/dell/.gradle/caches/transforms-3/e39449332b16abbff71917ad5661bdd3/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
 26-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/dell/.gradle/caches/transforms-3/e39449332b16abbff71917ad5661bdd3/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:22-76
 27
 28    <application
-28-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:14:5-33:19
+28-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:14:5-33:19
 29        android:name="com.newproject.MainApplication"
-29-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:15:7-38
+29-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:15:7-38
 30        android:allowBackup="false"
-30-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:19:7-34
+30-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:19:7-34
 31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 31-->[androidx.core:core:1.8.0] /home/dell/.gradle/caches/transforms-3/9623e378e4dfc57c47793d0ffd25ee05/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
 32        android:debuggable="true"
 33        android:icon="@mipmap/ic_launcher"
-33-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:17:7-41
+33-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:17:7-41
 34        android:label="@string/app_name"
-34-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:16:7-39
+34-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:16:7-39
 35        android:roundIcon="@mipmap/ic_launcher_round"
-35-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:18:7-52
+35-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:18:7-52
 36        android:theme="@style/AppTheme"
-36-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:20:7-38
+36-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:20:7-38
 37        android:usesCleartextTraffic="true" >
-37-->/home/dell/React Native/NewProject/android/app/src/debug/AndroidManifest.xml:8:9-44
+37-->/home/dell/React Native/customer-details/android/app/src/debug/AndroidManifest.xml:8:9-44
 38        <activity
-38-->/home/dell/React Native/NewProject/android/app/src/debug/AndroidManifest.xml:11:9-111
+38-->/home/dell/React Native/customer-details/android/app/src/debug/AndroidManifest.xml:11:9-111
 39            android:name="com.facebook.react.devsupport.DevSettingsActivity"
-39-->/home/dell/React Native/NewProject/android/app/src/debug/AndroidManifest.xml:11:19-83
+39-->/home/dell/React Native/customer-details/android/app/src/debug/AndroidManifest.xml:11:19-83
 40            android:exported="false" />
-40-->/home/dell/React Native/NewProject/android/app/src/debug/AndroidManifest.xml:11:84-108
+40-->/home/dell/React Native/customer-details/android/app/src/debug/AndroidManifest.xml:11:84-108
 41        <activity
-41-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:21:7-32:18
+41-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:21:7-32:18
 42            android:name="com.newproject.MainActivity"
-42-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:22:9-37
+42-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:22:9-37
 43            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
-43-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:24:9-118
+43-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:24:9-118
 44            android:exported="true"
-44-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:27:9-32
+44-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:27:9-32
 45            android:label="@string/app_name"
-45-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:23:9-41
+45-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:23:9-41
 46            android:launchMode="singleTask"
-46-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:25:9-40
+46-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:25:9-40
 47            android:windowSoftInputMode="adjustResize" >
-47-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:26:9-51
+47-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:26:9-51
 48            <intent-filter>
-48-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:28:9-31:25
+48-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:28:9-31:25
 49                <action android:name="android.intent.action.MAIN" />
-49-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:29:13-65
-49-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:29:21-62
+49-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:29:13-65
+49-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:29:21-62
 50
 51                <category android:name="android.intent.category.LAUNCHER" />
-51-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:30:13-73
-51-->/home/dell/React Native/NewProject/android/app/src/main/AndroidManifest.xml:30:23-70
+51-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:30:13-73
+51-->/home/dell/React Native/customer-details/android/app/src/main/AndroidManifest.xml:30:23-70
 52            </intent-filter>
 53        </activity>
 54

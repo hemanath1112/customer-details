@@ -2,9 +2,9 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import Home from './src/Home';
-import SecondPage from './src/SecondPage';
-import Camera from './src/Camera';
+import Home from './src/Screens/Home_Page';
+import UserList from './src/Screens/User_List';
+import Camera from './src/Screens/Camera_Page';
 
 const App = () => {
   const stack = createNativeStackNavigator();
@@ -18,9 +18,9 @@ const App = () => {
           options={{headerShown: false}}
         />
         <stack.Screen
-          name="Secondpage"
-          component={SecondPage}
-          options={{title: 'List Item'}}
+          name="UserList"
+          component={UserList}
+          options={{title: 'Users Details'}}
         />
         <stack.Screen name="camera" component={Camera} />
       </stack.Navigator>
