@@ -19,9 +19,9 @@ const Home = () => {
     <View style={styles.Home}>
       <View>
         <Text onPress={GoSecondPage} style={styles.ListItems}>
-          ListItem
+          User Details
         </Text>
-        <Text style={styles.CameraItem} onPress={GoCamera}>
+        <Text style={styles.ListItems} onPress={GoCamera}>
           Camera
         </Text>
         <Text style={styles.ListItems} onPress={GoToLocationPage}>Location</Text>
@@ -41,21 +41,12 @@ const styles = StyleSheet.create({
   ListItems: {
     fontSize: 20,
     backgroundColor: '#e67e22',
-    paddingHorizontal: 20,
+    paddingHorizontal: 15,
     paddingVertical: 10,
     marginBottom: 10,
     color: 'white',
     fontWeight: 'bold',
     borderRadius: 5,
-  },
-  CameraItem: {
-    fontSize: 20,
-    backgroundColor: '#e67e22',
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-    marginBottom: 10,
-    color: 'white',
-    fontWeight: 'bold',
-    borderRadius: 5,
+    textAlign:'center'
   },
 });

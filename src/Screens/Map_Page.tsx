@@ -6,8 +6,8 @@ import Geolocation from "@react-native-community/geolocation";
 const Map_Page = () => {
   const { width, height } = Dimensions.get("window");
   const [currentLocation, setCurrentLocation] = useState({
-    latitude :37.7749,
-    longitude :-122.4194,
+    latitude: 28.6139, 
+    longitude: 77.2090
   });
 
   const getCurrentLocation = () => {
@@ -30,7 +30,7 @@ const Map_Page = () => {
   return (
     <View style={styles.container}>
       <MapView
-        style={{ flex: 1, width: width }}
+        style={styles.MapView}
         initialRegion={{
           latitude: currentLocation.latitude,
           longitude: currentLocation.longitude,
@@ -49,6 +49,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  MapView:{
+    flex:1
+  }
 });
 
 export default Map_Page;
