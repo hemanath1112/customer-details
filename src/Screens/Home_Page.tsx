@@ -1,9 +1,7 @@
 import React from 'react';
 import {View, StyleSheet, Text} from 'react-native';
-import {useNavigation} from '@react-navigation/native';
 
-const Home = () => {
-  const navigation = useNavigation();
+const Home = ({navigation}) => {
 
   const GoSecondPage = () => {
     navigation.navigate('UserList');
