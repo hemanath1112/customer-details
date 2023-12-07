@@ -22,11 +22,8 @@ type ItemProps = {
   email: string;
 };
 
-type userListProps = {
-  navigation: any;
-};
 
-const UserList: React.FC<userListProps> = ({ navigation }) => {
+const UserList = ({ navigation }) => {
   const [data, setData] = useState<ItemProps[]>([]);
   const [refreshing, setRefreshing] = useState<boolean>(false);
   const [currentPage, setCurrentPage] = useState<number>(1);

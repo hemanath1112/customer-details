@@ -5,9 +5,8 @@ import {useCamera} from 'react-native-camera-hooks';
 import RNFS from 'react-native-fs';
 import {request, PERMISSIONS} from 'react-native-permissions';
 
-interface CameraItemProps {}
 
-const CameraItem: React.FC<CameraItemProps> = () => {
+const CameraItem= () => {
   const [{cameraRef}, {takePicture}] = useCamera();
 
   const requestPermission = async () => {
@@ -48,8 +47,6 @@ const CameraItem: React.FC<CameraItemProps> = () => {
     </View>
   );
 };
-
-CameraItem.propTypes = {};
 
 export default CameraItem;
 
