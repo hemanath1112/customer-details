@@ -22,7 +22,6 @@ type ItemProps = {
   email: string;
 };
 
-
 const UserList = ({ navigation }) => {
   const [data, setData] = useState<ItemProps[]>([]);
   const [refreshing, setRefreshing] = useState<boolean>(false);
@@ -55,7 +54,7 @@ const UserList = ({ navigation }) => {
       .then((response) => {
         setTimeout(() => {
           return setData((prevData) => [...prevData, ...response.data.results]);
-        },1000);
+        }, 1000);
       })
 
       .catch((err) => console.log(err))
@@ -87,6 +86,7 @@ const UserList = ({ navigation }) => {
     return <UserDetails item={item} />;
   };
 
+  // eslint-disable-next-line react/no-unstable-nested-components
   const Loader = () => {
     return refreshing ? null : (
       <View style={styles.Loader}>
@@ -95,8 +95,8 @@ const UserList = ({ navigation }) => {
       </View>
     );
   };
-  
-  const emptyComponent= () => {
+
+  const emptyComponent = () => {
     return (
       <View style={styles.emptyItem}>
         <Text style={styles.LoadingText}>Loading..</Text>
@@ -105,6 +105,7 @@ const UserList = ({ navigation }) => {
     );
   };
 
+  // eslint-disable-next-line react/no-unstable-nested-components
   const EndPage: React.FC = () => {
     return (
       <View>
@@ -138,13 +139,15 @@ const UserList = ({ navigation }) => {
             <RefreshControl refreshing={refreshing} onRefresh={handleRefresh} />
           }
           ListEmptyComponent={emptyComponent}
-          ListFooterComponent={  currentPage === 10
-            ? EndPage
-            : data.length
-            ? Loader
-            : refreshing
-            ? Loader
-            : null}
+          ListFooterComponent={
+            currentPage === 10
+              ? EndPage
+              : data.length
+              ? Loader
+              : refreshing
+              ? Loader
+              : null
+          }
           onEndReached={LoadMoreItem}
           onEndReachedThreshold={0}
         />
@@ -191,19 +194,19 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   Loader: {
-    justifyContent:'center',
-    alignContent:'center',
-    textAlign:'center',
-    marginTop:20
+    justifyContent: "center",
+    alignContent: "center",
+    textAlign: "center",
+    marginTop: 20,
   },
-  LoadingText:{
-    textAlign:'center'
+  LoadingText: {
+    textAlign: "center",
   },
-  emptyItem:{
-  marginTop:400,
-    flex:1,
-    justifyContent:'center',
-    alignItems:'center'
+  emptyItem: {
+    marginTop: 400,
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
   LoaderItem: {
     marginTop: 400,
@@ -211,7 +214,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   HeaderContent: {
-    flexDirection: "row",
+    flexDirection: 'row',
     justifyContent: "space-between",
     paddingHorizontal: 20,
   },

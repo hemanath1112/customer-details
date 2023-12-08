@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     bottom: 50,
     alignSelf: "center",
-    borderWidth:3,
-    borderColor:'white'
+    borderWidth: 3,
+    borderColor: "white",
   },
 });

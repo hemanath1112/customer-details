@@ -1,6 +1,6 @@
-import React, {memo} from 'react';
-import {StyleSheet, View, Text, Image} from 'react-native';
-import {useEffect} from 'react';
+import React, { memo } from "react";
+import { StyleSheet, View, Text, Image } from "react-native";
+import { useEffect } from "react";
 
 interface ItemProps {
   item: {
@@ -15,7 +15,10 @@ interface ItemProps {
   };
 }
 
-function arePropsEqualarePropsEqual(oldProps: ItemProps, newProps: ItemProps): boolean {
+function arePropsEqualarePropsEqual(
+  oldProps: ItemProps,
+  newProps: ItemProps
+): boolean {
   return (
     oldProps.item.name.first === newProps.item.name.first &&
     oldProps.item.name.last === newProps.item.name.last &&
@@ -24,14 +27,14 @@ function arePropsEqualarePropsEqual(oldProps: ItemProps, newProps: ItemProps): b
   );
 }
 
-const userDetails = ({item}: any) => {
+const userDetails = ({ item }: any) => {
   useEffect(() => {
-    console.log('Component rendered:', item.name.first, item.name.last);
+    console.log("Component rendered:", item.name.first, item.name.last);
   }, [item]);
   return (
     <View style={styles.Contacts}>
       <View>
-        <Image source={{uri: item.picture.large}} style={styles.Image} />
+        <Image source={{ uri: item.picture.large }} style={styles.Image} />
       </View>
       <View>
         <Text style={styles.Name}>
@@ -49,10 +52,10 @@ const styles = StyleSheet.create({
   Contacts: {
     marginLeft: 12,
     marginRight: 50,
-    borderBottomColor: '#dfe6e9',
+    borderBottomColor: "#dfe6e9",
     borderBottomWidth: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     paddingBottom: 20,
     paddingTop: 20,
   },
@@ -60,21 +63,21 @@ const styles = StyleSheet.create({
     width: 70,
     height: 70,
     borderRadius: 50,
-    objectFit: 'cover',
+    objectFit: "cover",
     marginRight: 15,
     marginLeft: 8,
   },
   Name: {
     fontSize: 18,
     marginBottom: 5,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     marginTop: 5,
-    color: 'black',
-    fontFamily: 'Roboto-Black',
+    color: "black",
+    fontFamily: "Roboto-Black",
   },
   Number: {
     fontSize: 12,
-    fontWeight: 'bold',
-    color: 'black',
+    fontWeight: "bold",
+    color: "black",
   },
 });

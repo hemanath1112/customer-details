@@ -1,9 +1,7 @@
 import React from "react";
 import { View, StyleSheet, Text, TouchableOpacity } from "react-native";
 
-
 const Home = ({ navigation }) => {
-  
   const goToUserListPage = () => {
     navigation.navigate("userList");
   };
@@ -35,7 +33,6 @@ const Home = ({ navigation }) => {
 
 export default Home;
 
-
 const styles = StyleSheet.create({
   Home: {
     flex: 1,
@@ -50,11 +47,10 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     marginBottom: 10,
     borderRadius: 5,
-  
   },
-  Text:{
+  Text: {
     textAlign: "center",
     color: "white",
     fontWeight: "bold",
-  }
+  },
 });

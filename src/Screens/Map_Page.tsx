@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { View, StyleSheet, Dimensions } from "react-native";
+import { View, StyleSheet } from "react-native";
 import MapView from "react-native-maps";
 import Geolocation from "@react-native-community/geolocation";
 
 const MapPage = () => {
   const [currentLocation, setCurrentLocation] = useState({
-    latitude: 28.6139, 
-    longitude: 77.2090
+    latitude: 28.6139,
+    longitude: 77.209,
   });
 
   const getCurrentLocation = () => {
@@ -48,9 +48,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  MapView:{
-    flex:1
-  }
+  MapView: {
+    flex: 1,
+  },
 });
 
 export default MapPage;
