@@ -2,10 +2,10 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import Home from "./src/Screens/homePage";
-import UserList from "./src/Screens/userList";
-import Camera from "./src/Screens/cameraPage";
-import MapPage from "./src/Screens/mapPage";
+import Home from "./src/Screens/Home";
+import UserList from "./src/Screens/User_List";
+import Camera from "./src/Screens/Camera";
+import MapPage from "./src/Screens/Map_Page";
 
 const App = () => {
   const stack = createNativeStackNavigator();
@@ -23,7 +23,7 @@ const App = () => {
           component={UserList}
           options={{ title: "Users Details" }}
         />
-        <stack.Screen name="camera" component={Camera} />
+        <stack.Screen name="Camera" component={Camera} />
         <stack.Screen name="Location" component={MapPage} />
       </stack.Navigator>
     </NavigationContainer>

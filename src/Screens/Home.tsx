@@ -3,11 +3,12 @@ import { View, StyleSheet, Text, TouchableOpacity } from "react-native";
 
 
 const Home = ({ navigation }) => {
+  
   const goToUserListPage = () => {
     navigation.navigate("userList");
   };
   const goToCameraPage = () => {
-    navigation.navigate("camera");
+    navigation.navigate("Camera");
   };
   const goToLocationPage = () => {
     navigation.navigate("Location");

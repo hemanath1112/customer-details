@@ -11,7 +11,7 @@ import {
   Switch,
 } from "react-native";
 
-import UserDetails from "./userDetails";
+import UserDetails from "./User_Details";
 
 type ItemProps = {
   name: {
@@ -26,7 +26,7 @@ type ItemProps = {
 const UserList = ({ navigation }) => {
   const [data, setData] = useState<ItemProps[]>([]);
   const [refreshing, setRefreshing] = useState<boolean>(false);
-  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [currentPage, setCurrentPage] = useState<number>(0);
   const [switchItem, setSwitchItem] = useState<string>("female");
   const [switchValue, setSwitchValue] = useState<boolean>(false);
 
@@ -55,7 +55,7 @@ const UserList = ({ navigation }) => {
       .then((response) => {
         setTimeout(() => {
           return setData((prevData) => [...prevData, ...response.data.results]);
-        }, 3000);
+        },1000);
       })
 
       .catch((err) => console.log(err))
@@ -87,10 +87,19 @@ const UserList = ({ navigation }) => {
     return <UserDetails item={item} />;
   };
 
-  const Loader: React.FC = () => {
-    return (
+  const Loader = () => {
+    return refreshing ? null : (
       <View style={styles.Loader}>
-        <Text>Loading..</Text>
+        <Text style={styles.LoadingText}>Loading..</Text>
+        <ActivityIndicator size="large" color="red" />
+      </View>
+    );
+  };
+  
+  const emptyComponent= () => {
+    return (
+      <View style={styles.emptyItem}>
+        <Text style={styles.LoadingText}>Loading..</Text>
         <ActivityIndicator size="large" color="red" />
       </View>
     );
@@ -128,7 +137,14 @@ const UserList = ({ navigation }) => {
           refreshControl={
             <RefreshControl refreshing={refreshing} onRefresh={handleRefresh} />
           }
-          ListFooterComponent={currentPage === 10 ? EndPage : Loader}
+          ListEmptyComponent={emptyComponent}
+          ListFooterComponent={  currentPage === 10
+            ? EndPage
+            : data.length
+            ? Loader
+            : refreshing
+            ? Loader
+            : null}
           onEndReached={LoadMoreItem}
           onEndReachedThreshold={0}
         />
@@ -175,8 +191,19 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   Loader: {
-    marginVertical: 400,
-    alignItems: "center",
+    justifyContent:'center',
+    alignContent:'center',
+    textAlign:'center',
+    marginTop:20
+  },
+  LoadingText:{
+    textAlign:'center'
+  },
+  emptyItem:{
+  marginTop:400,
+    flex:1,
+    justifyContent:'center',
+    alignItems:'center'
   },
   LoaderItem: {
     marginTop: 400,
