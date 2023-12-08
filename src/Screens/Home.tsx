@@ -1,15 +1,16 @@
-import React from "react";
-import { View, StyleSheet, Text, TouchableOpacity } from "react-native";
+/* eslint-disable prettier/prettier */
+import React from 'react';
+import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 const Home = ({ navigation }) => {
   const goToUserListPage = () => {
-    navigation.navigate("userList");
+    navigation.navigate('userList');
   };
   const goToCameraPage = () => {
-    navigation.navigate("Camera");
+    navigation.navigate('Camera');
   };
   const goToLocationPage = () => {
-    navigation.navigate("Location");
+    navigation.navigate('Location');
   };
 
   return (
@@ -36,21 +37,21 @@ export default Home;
 const styles = StyleSheet.create({
   Home: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#ecf0f1",
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#ecf0f1',
   },
   ListItems: {
     fontSize: 20,
-    backgroundColor: "#e67e22",
+    backgroundColor: '#e67e22',
     paddingHorizontal: 15,
     paddingVertical: 10,
     marginBottom: 10,
     borderRadius: 5,
   },
   Text: {
-    textAlign: "center",
-    color: "white",
-    fontWeight: "bold",
+    textAlign: 'center',
+    color: 'white',
+    fontWeight: 'bold',
   },
 });

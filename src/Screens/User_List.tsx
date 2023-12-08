@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+/* eslint-disable prettier/prettier */
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import {
   SafeAreaView,
   StyleSheet,
@@ -9,9 +10,9 @@ import {
   RefreshControl,
   ActivityIndicator,
   Switch,
-} from "react-native";
+} from 'react-native';
 
-import UserDetails from "./User_Details";
+import UserDetails from './User_Details';
 
 type ItemProps = {
   name: {
@@ -26,7 +27,7 @@ const UserList = ({ navigation }) => {
   const [data, setData] = useState<ItemProps[]>([]);
   const [refreshing, setRefreshing] = useState<boolean>(false);
   const [currentPage, setCurrentPage] = useState<number>(0);
-  const [switchItem, setSwitchItem] = useState<string>("female");
+  const [switchItem, setSwitchItem] = useState<string>('female');
   const [switchValue, setSwitchValue] = useState<boolean>(false);
 
   React.useLayoutEffect(() => {
@@ -41,7 +42,7 @@ const UserList = ({ navigation }) => {
 
   const toggleSwitch = () => {
     setSwitchValue((previousState) => !previousState);
-    setSwitchItem((prevItem) => (prevItem === "female" ? "male" : "female"));
+    setSwitchItem((prevItem) => (prevItem === 'female' ? 'male' : 'female'));
     setCurrentPage(0);
     setData([]);
   };
@@ -160,67 +161,67 @@ export default UserList;
 
 const styles = StyleSheet.create({
   Selection: {
-    flexDirection: "row",
-    justifyContent: "center",
-    color: "white",
+    flexDirection: 'row',
+    justifyContent: 'center',
+    color: 'white',
     marginBottom: 10,
   },
   Color: {
-    color: "white",
+    color: 'white',
     fontSize: 16,
   },
   Toggle: {
-    justifyContent: "center",
-    textAlign: "center",
-    backgroundColor: "#e67e22",
+    justifyContent: 'center',
+    textAlign: 'center',
+    backgroundColor: '#e67e22',
   },
   GenderSelection: {
-    textAlign: "center",
+    textAlign: 'center',
     marginVertical: 10,
     fontSize: 20,
-    color: "white",
-    fontWeight: "bold",
+    color: 'white',
+    fontWeight: 'bold',
   },
   endofPage: {
     marginTop: 10,
-    alignItems: "center",
+    alignItems: 'center',
     fontSize: 20,
-    textAlign: "center",
+    textAlign: 'center',
   },
   NoDatas: {
-    textAlign: "center",
+    textAlign: 'center',
     marginTop: 400,
     fontSize: 20,
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
   Loader: {
-    justifyContent: "center",
-    alignContent: "center",
-    textAlign: "center",
+    justifyContent: 'center',
+    alignContent: 'center',
+    textAlign: 'center',
     marginTop: 20,
   },
   LoadingText: {
-    textAlign: "center",
+    textAlign: 'center',
   },
   emptyItem: {
     marginTop: 400,
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   LoaderItem: {
     marginTop: 400,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   HeaderContent: {
     flexDirection: 'row',
-    justifyContent: "space-between",
+    justifyContent: 'space-between',
     paddingHorizontal: 20,
   },
   searchInput: {
     height: 40,
-    borderColor: "gray",
+    borderColor: 'gray',
     borderWidth: 1,
     margin: 10,
     paddingLeft: 10,
@@ -229,6 +230,6 @@ const styles = StyleSheet.create({
     paddingBottom: 200,
   },
   SWitchItem: {
-    textAlign: "center",
+    textAlign: 'center',
   },
 });

@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { View, StyleSheet } from "react-native";
-import MapView from "react-native-maps";
-import Geolocation from "@react-native-community/geolocation";
+/* eslint-disable prettier/prettier */
+import React, { useEffect, useState } from 'react';
+import { View, StyleSheet } from 'react-native';
+import MapView from 'react-native-maps';
+import Geolocation from '@react-native-community/geolocation';
 
 const MapPage = () => {
   const [currentLocation, setCurrentLocation] = useState({
@@ -16,7 +17,7 @@ const MapPage = () => {
         setCurrentLocation({ latitude, longitude });
       },
       (error) => {
-        console.log("Error getting location", error);
+        console.log('Error getting location', error);
       },
       { enableHighAccuracy: true, timeout: 15000, maximumAge: 10000 }
     );
